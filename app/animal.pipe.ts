@@ -8,25 +8,24 @@ import {Animal} from './animal.model';
 
 export class AnimalPipe implements PipeTransform {
 
-
-  transform(input: Animal[], desiredAnimal) {
+  transform(input: Animal[], desiredAge) {
     var output: Animal[] = [];
-    if(desiredAnimal === "youngAnimals") {
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].done === false) {
+    if(desiredAge === 'youngAnimals') {
+      for(var i =0; i< input.length; i++) {
+        if (input[i].age <= 2) {
           output.push(input[i]);
         }
-      }
-      return output;
-    } else if (desiredAnimal === "adultAnimals") {
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].done === true) {
+      };
+      return output
+    } else if (desiredAge === 'adultAnimals') {
+      for(var i =0; i< input.length; i++) {
+        if (input[i].age > 2) {
           output.push(input[i]);
         }
-      }
+      };
       return output;
     } else {
-      return input;
+    return input;
     }
   }
 

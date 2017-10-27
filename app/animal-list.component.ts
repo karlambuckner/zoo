@@ -28,10 +28,10 @@ export class AnimalListComponent {
   }
 
   onChange(optionFromMenu) {
-  this.filterByAnimal = optionFromMenu;
+    this.filterByAnimal = optionFromMenu;
   }
 
   toggleDone(clickedAnimal: Animal, setAnimal: boolean) {
-     clickedAnimal.done = setAnimal;
+    clickedAnimal.done = setAnimal;
   }
 }
