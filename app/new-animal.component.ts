@@ -5,44 +5,44 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <h1>New Animal</h1>
-  <div class="right">
-    <div>
-     <label>Enter Species:</label>
-     <input #newSpecies>
-    </div>
-    <div>
-     <label>Enter Name:</label>
-     <input #newName>
-    </div>
-    <div>
-     <label>Enter Age:</label>
-     <input #newAge>
-    </div>
-    <div>
-     <label>Enter Diet:</label>
-     <input #newDiet>
-    </div>
-    <div>
-     <label>Enter Location:</label>
-     <input #newLocation>
-    </div>
-    <div>
-     <label>Enter Caretakers:</label>
-     <input #newCaretakers>
-    </div>
-    <div>
-     <label>Enter Sex:</label>
-     <input #newSex>
-    </div>
-    <div>
-     <label>Enter Likes:</label>
-     <input #newLikes>
-    </div>
-    <div>
-     <label>Enter Dislikes:</label>
-     <input #newDislikes>
-    </div>
-    <button class= "btn btn-success"(click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
+    <div class="right">
+      <div>
+        <label>Enter Species:</label>
+        <input #newSpecies>
+        </div>
+      <div>
+        <label>Enter Name:</label>
+        <input #newName>
+      </div>
+      <div>
+        <label>Enter Age:</label>
+        <input #newAge>
+      </div>
+      <div>
+        <label>Enter Diet:</label>
+        <input #newDiet>
+      </div>
+      <div>
+        <label>Enter Location:</label>
+        <input #newLocation>
+      </div>
+      <div>
+        <label>Enter Caretakers:</label>
+        <input #newCaretakers>
+      </div>
+      <div>
+        <label>Enter Sex:</label>
+        <input #newSex>
+      </div>
+      <div>
+        <label>Enter Likes:</label>
+        <input #newLikes>
+      </div>
+      <div>
+        <label>Enter Dislikes:</label>
+        <input #newDislikes>
+      </div>
+      <button class= "btn btn-success"(click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
     </div>
   `
 })
