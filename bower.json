@@ -1,8 +1,5 @@
 {
   "name": "zoo",
-  "authors": [
-    "Karla Buckner <kmb2662@gmail.com>"
-  ],
   "description": "",
   "main": "",
   "license": "MIT",
@@ -13,5 +10,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
 }
