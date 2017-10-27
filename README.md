@@ -6,7 +6,7 @@
 
 ## Description
 
-_In this web application, the user can add newly-admitted animals and important information about them. The user can see a list of all animals and edit their information when need be. The list can by sorted by age for easy finding_
+_In this web application, the user can add newly-admitted animals and important information about them. The user can see a list of all animals and edit their information when need be. The list can by sorted by age for easy finding._
 
 ## Specifications
 

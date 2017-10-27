@@ -1,0 +1,11 @@
+{
+  "name": "zoo",
+  "version": "1.0.0",
+  "description": "#### _This is a web application for organizing the animals in the local zoo. Oct 27, 2017_",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

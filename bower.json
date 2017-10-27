@@ -1,0 +1,17 @@
+{
+  "name": "zoo",
+  "authors": [
+    "Karla Buckner <kmb2662@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
