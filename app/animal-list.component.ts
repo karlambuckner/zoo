@@ -8,6 +8,9 @@ import { Animal } from './animal.model';
       <option value="allAnimals">All Animals</option>
       <option value="youngAnimals">Under 2 Years</option>
       <option value="adultAnimals">2 Years or Older</option>
+      <option value="omnivores">Omnivores</option>
+      <option value="herbivores">Herbivores</option>
+      <option value="carnivores">Carnivores</option>
     </select>
     <br>
     <br>
@@ -31,7 +34,6 @@ import { Animal } from './animal.model';
         </div>
         <br>
       </div>
-
   `
 })
 
@@ -39,6 +41,7 @@ export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
   filterByAnimal: string = "allAnimals";
+
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
