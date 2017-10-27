@@ -5,23 +5,40 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
     <select (change)="onChange($event.target.value)">
+      <option value="allAnimals">All Animals</option>
       <option value="youngAnimals">Under 2 Years</option>
-      <option value="adultAnimals">Over 2 Years</option>
+      <option value="adultAnimals">2 Years or Older</option>
     </select>
-    <ul>
-      <li *ngFor="let currentAnimal of childAnimalList | animal:filterByAnimal">{{currentAnimal.species}} {{currentAnimal.name}} {{currentAnimal.age}} {{currentAnimal.diet}} {{currentAnimal.location}} {{currentAnimal.caretakers}} {{currentAnimal.sex}} {{currentAnimal.likes}} {{currentAnimal.dislikes}}
-        <input *ngIf="currentAnimal.done === true" type="checkbox" checked (click)="toggleDone(currentAnimal, false)"/>
-        <input *ngIf="currentAnimal.done === false" type="checkbox" (click)="toggleDone(currentAnimal, true)"/>
-        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>
-      </li>
-    </ul>
+    <br>
+    <br>
+      <div *ngFor="let currentAnimal of childAnimalList | animal:filterByAnimal">
+        <div class="card col-md-5">
+          <ul>
+            <div class="emphasis">
+              <p>Species: {{currentAnimal.species}}<br>
+              Name: {{currentAnimal.name}}</p>
+            </div>
+            <li>Age: {{currentAnimal.age}}</li>
+            <li>Diet: {{currentAnimal.diet}}</li>
+            <li>Location: {{currentAnimal.location}}</li>
+            <li>Caretakers Needed: {{currentAnimal.caretakers}}</li>
+            <li>Sex: {{currentAnimal.sex}}</li>
+            <li>Likes: {{currentAnimal.likes}}</li>
+            <li>Dislikes: {{currentAnimal.dislikes}}</li>
+            <br>
+            <button class="btn btn-success" (click)="editButtonHasBeenClicked(currentAnimal)">Edit</button>
+          </ul>
+        </div>
+        <br>
+      </div>
+
   `
 })
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
-  filterByAnimal: string = "youngAnimals";
+  filterByAnimal: string = "allAnimals";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
@@ -29,9 +46,5 @@ export class AnimalListComponent {
 
   onChange(optionFromMenu) {
     this.filterByAnimal = optionFromMenu;
-  }
-
-  toggleDone(clickedAnimal: Animal, setAnimal: boolean) {
-    clickedAnimal.done = setAnimal;
   }
 }

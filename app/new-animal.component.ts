@@ -5,6 +5,7 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <h1>New Animal</h1>
+  <div class="right">
     <div>
      <label>Enter Species:</label>
      <input #newSpecies>
@@ -41,7 +42,8 @@ import { Animal } from './animal.model';
      <label>Enter Dislikes:</label>
      <input #newDislikes>
     </div>
-    <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
+    <button class= "btn btn-success"(click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
+    </div>
   `
 })
 

@@ -1,7 +1,29 @@
 img {
+  display: block;
+  margin: auto;
   padding:20px;
 }
 
 body {
   padding: 20px;
+  background-color: #d8c89e;
+  font-family: 'Cabin Sketch', cursive;
+  color: #302106;
+}
+
+.card {
+  background-color: #665c43;
+  padding-top: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.emphasis{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 70px;
 }
