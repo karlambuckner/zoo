@@ -1,5 +1,7 @@
 # _Zoo Animal Tracker_
 
+<img width="1808" alt="screen shot 2017-11-16 at 2 40 02 pm" src="https://user-images.githubusercontent.com/27794720/32919852-1c4e18e2-cadc-11e7-867e-373ec86a5421.png">
+
 #### _This is a web application for organizing the animals in the local zoo. Oct 27, 2017_
 
 #### By _**Karla Buckner**_
